@@ -1,0 +1,13 @@
+item do
+  expected do
+    url_xpath
+    url 'http://www.sqlite.org/changes.html'
+    xpath '/html/body/div/h3[1]'
+    regex /^\d+-\d+-\d+ \(([\d.]+)\)$/
+  end
+
+  actual do
+    git_tag
+    regex /^(.*)-\d+$/
+  end
+end
