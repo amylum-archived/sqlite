@@ -37,8 +37,7 @@ build: source
 	rm -rf $(BUILD_DIR)
 	cp -R $(SOURCE_PATH) $(BUILD_DIR)
 	cd $(BUILD_DIR) && CC=musl-gcc CFLAGS='$(CFLAGS)' ./configure $(PATH_FLAGS)
-	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR)
-	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR) showdb showjournal showstat4 showwal sqldiff
+	cd $(BUILD_DIR) && make
 	cd $(BUILD_DIR) && make DESTDIR=$(RELEASE_DIR) install
 	mkdir -p $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)
 	cp SQLITE_LICENSE $(RELEASE_DIR)/usr/share/licenses/$(PACKAGE)/LICENSE
