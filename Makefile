@@ -10,7 +10,7 @@ UPSTREAM_PACKAGE_VERSION = $(shell printf "%d%0.2d%0.2d00" $(subst ., ,$(PACKAGE
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
 
-SOURCE_URL = http://www.sqlite.org/2015/sqlite-autoconf-$(UPSTREAM_PACKAGE_VERSION).tar.gz
+SOURCE_URL = http://www.sqlite.org/2016/sqlite-autoconf-$(UPSTREAM_PACKAGE_VERSION).tar.gz
 SOURCE_PATH = /tmp/source
 SOURCE_TARBALL = /tmp/source.tar.gz
 
