@@ -5,7 +5,7 @@ BUILD_DIR = /tmp/$(PACKAGE)-build
 RELEASE_DIR = /tmp/$(PACKAGE)-release
 RELEASE_FILE = /tmp/$(PACKAGE).tar.gz
 
-PACKAGE_VERSION = 3.11.1
+PACKAGE_VERSION = 3.12.0
 UPSTREAM_PACKAGE_VERSION = $(shell printf "%d%0.2d%0.2d00" $(subst ., ,$(PACKAGE_VERSION)))
 PATCH_VERSION = $$(cat version)
 VERSION = $(PACKAGE_VERSION)-$(PATCH_VERSION)
