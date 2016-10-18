@@ -1,0 +1,25 @@
+name 'sqlite'
+org 'amylum'
+
+source(
+  type: 'tar',
+  url: 'https://www.sqlite.org/2016/sqlite-autoconf-3150000.tar.gz'
+)
+
+configure_flags(
+  prefix: '/usr'
+)
+
+harden
+
+patch 'license.patch'
+
+build do
+  configure
+  make
+  install
+end
+
+test do
+  # TODO: add tests
+end

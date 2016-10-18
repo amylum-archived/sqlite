@@ -1,6 +1,8 @@
 sqlite
 ==========
 
+[![Build Status](https://img.shields.io/circleci/project/amylum/sqlite/master.svg)](https://circleci.com/gh/amylum/sqlite)
+[![GitHub release](https://img.shields.io/github/release/amylum/sqlite.svg)](https://github.com/amylum/sqlite/releases)
 [![Public Domain](http://img.shields.io/badge/license-Public_Domain-green.svg)](http://www.sqlite.org/copyright.html)
 
 Package repo for [sqlite](http://www.sqlite.org/changes.html)
