@@ -3,7 +3,7 @@ org 'amylum'
 
 source(
   type: 'tar',
-  url: 'https://www.sqlite.org/2016/sqlite-autoconf-3150000.tar.gz'
+  url: 'https://www.sqlite.org/2016/sqlite-autoconf-3150100.tar.gz'
 )
 
 configure_flags(
