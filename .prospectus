@@ -8,7 +8,7 @@ item do
   expected do
     url_xpath
     url 'https://www.sqlite.org/download.html'
-    xpath '/html/body/table/tr[2]/td[4]'
+    xpath '/html/body/table/tr[4]/td[4]'
     regex /.* version ([\d.]+)\.\(.*/
   end
 
