@@ -3,7 +3,8 @@ org 'amylum'
 
 source(
   type: 'tar',
-  url: 'https://www.sqlite.org/2017/sqlite-autoconf-3200100.tar.gz'
+  url: 'https://www.sqlite.org/2017/sqlite-autoconf-3200100.tar.gz',
+  checksum: 'ec66595b29bc0798b023a5122021ea646ab4fa9e2f735937c5426feeba950742'
 )
 
 configure_flags(
